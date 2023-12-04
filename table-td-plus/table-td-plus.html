@@ -1,0 +1,106 @@
+<div class="ag-table-td-plus">
+    <table>
+        <colgroup>
+            <col width="60">
+            <col width="90">
+            <col width="200">
+            <col width="200">
+            <col width="150">
+            <col width="200">
+            <col width="300">
+            <col width="200">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="text-center">
+                    <input type="checkbox" class="ag-table-check" id="id">
+                </th>
+                <th>
+                    Indice
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th>
+                    Compañia
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th>
+                    Usuario
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th>
+                    Estado
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th>
+                    Cargo
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th scope="1">
+                    Etiquetas
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th class="text-end">
+                    Precio Acciones
+                    <button type="button" class="ag-table-tab-btn active"></button>
+                </th>
+                <th>
+                    Estadistica
+                    <button type="button" class="ag-table-tab-btn"></button>
+                </th>
+                <th class="text-end">Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template v-for="item in table">
+                <tr>
+                    <td class="text-center">
+                        <input type="checkbox" class="ag-table-check" id="id">
+                        <label for="id"></label>
+                    </td>
+                    <td class="text-end">1</td>
+                    <td>
+                        <div class="ag-tarj-table">
+                            <div class="ag-tarj-table-avatar">
+                                <img src="http://localhost/multimedia/relleno/img-c8.png" alt="">
+                            </div>
+                            <div class="ag-tarj-table-body">
+                                <div>Industria ferro</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="ag-tarj-table ui-avatar">
+                            <div class="ag-tarj-table-avatar">
+                                <img src="http://localhost/multimedia/relleno/img-c8.png" alt="">
+                            </div>
+                            <div class="ag-tarj-table-body">
+                                <div>Malejandra Ferrer</div>
+                                <div class="table-subtext">Malejandra</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="ag-table-status" :class="item.status">Estado</span>
+                    </td>
+                    <td>
+                        <span class="ag-table-tag">Doctora</span>
+                    </td>
+                    <td>
+                        <div class="ag-table-group-tags">
+                            <span class="ag-table-tag ui-badge" :class="item.tag">Enfermera</span>
+                        </div>
+                    </td>
+                    <td class="text-end">$11.500</td>
+                    <td>
+                        <div class="ag-label-label">queso</div>
+                        <div class="ag-table-bar" data-bar-value="100%"></div>
+                    </td>
+                    <td class="text-end">queso</td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+    <div class="btns-controls">
+
+    </div>
+</div>
