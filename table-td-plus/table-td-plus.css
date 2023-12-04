@@ -1,3 +1,29 @@
+.valign-center {
+  vertical-align: middle;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.valign-bottom {
+  vertical-align: bottom;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right,
+.text-end {
+  text-align: right;
+}
+
+.text-left,
+.text-start {
+  text-align: left;
+}
+
 .ag-table-td-plus {
   background-color: #fff;
   font-family: system-ui, -apple-system, Ubuntu;
@@ -11,24 +37,6 @@
 .ag-table-td-plus * {
   box-sizing: border-box;
   margin: 0;
-}
-.ag-table-td-plus .valign-center {
-  vertical-align: middle;
-}
-.ag-table-td-plus .valign-top {
-  vertical-align: top;
-}
-.ag-table-td-plus .valign-bottom {
-  vertical-align: bottom;
-}
-.ag-table-td-plus .text-center {
-  text-align: center;
-}
-.ag-table-td-plus .text-end {
-  text-align: right;
-}
-.ag-table-td-plus .text-start {
-  text-align: left;
 }
 .ag-table-td-plus .table-subtext {
   font-size: 0.8rem;
