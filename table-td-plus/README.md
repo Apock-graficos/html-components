@@ -10,6 +10,6 @@ Copy HTML template
 <link rel="stylesheet" type="text/css" href="table-plus.css">
 ```
 
-### Overview
+### Previous
 
-<img src="assets/preview.png">
+<img src="../assets/previous.png">
