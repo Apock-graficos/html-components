@@ -12,4 +12,4 @@ Copy HTML template
 
 ### Previous
 
-<img src="../assets/previous.png">
+<img src="https://github.com/Apock-graficos/html-components/tree/main/assets/previous.png">
