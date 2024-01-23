@@ -1,4 +1,4 @@
-<div class="ag-table-plus">
+<div class="ag-table-plus table-ui-hover">
     <table>
         <thead>
             <tr>
@@ -8,56 +8,56 @@
                 <th width="100">
                     <div class="ag-table-th">
                         <div>Indice</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th width="200">
                     <div class="ag-table-th">
                         <div>Compañia</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th width="200">
                     <div class="ag-table-th">
                         <div>Usuario</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th width="150">
                     <div class="ag-table-th">
                         <div>Estado</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th width="200">
                     <div class="ag-table-th">
                         <div>Cargo</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th width="300">
                     <div class="ag-table-th">
                         <div>Etiquetas</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th width="200">
                     <div class="ag-table-th">
                         <div>Precio Acciones</div>
-                        <button type="button" class="ag-table-th-btn active"></button>
+                        <button type="button" class="ag-table-btn-order active"></button>
                     </div>
                 </th>
                 <th>
                     <div class="ag-table-th">
                         <div>Estadistica</div>
-                        <button type="button" class="ag-table-th-btn"></button>
+                        <button type="button" class="ag-table-btn-order"></button>
                     </div>
                 </th>
                 <th class="text-end">Accion</th>
             </tr>
         </thead>
         <tbody>
-            <template v-for="item in table">
+            <template v-for="(item, index) in table">
                 <tr :class="item.theme">
                     <td class="text-center ag-table-tr-count">
                         <input type="checkbox" class="ag-table-check" id="id">
@@ -65,23 +65,23 @@
                     </td>
                     <td class="text-end">1</td>
                     <td>
-                        <div class="ag-tarj-table">
-                            <div class="ag-table-avatar">
-                                <img src="http://localhost/multimedia/relleno/img-c8.png" alt="">
+                        <div class="ag-table-tarj">
+                            <div class="ag-table-logo">
+                                <img :src="'http://localhost/multimedia/lorem/logo/' + (index + 3) + '.svg' " alt="">
                             </div>
-                            <div class="ag-tarj-table-body">
+                            <div class="ag-table-tarj-body">
                                 <div>Industria ferro</div>
                             </div>
                         </div>
                     </td>
                     <td>
-                        <div class="ag-tarj-table ui-avatar">
+                        <div class="ag-table-tarj">
                             <div class="ag-table-avatar ui-avatar-sm ui-rounded">
                                 <img :src="'http://localhost/multimedia/relleno/img-' + item.avatar +'.png'" alt="">
                             </div>
-                            <div class="ag-tarj-table-body">
+                            <div class="ag-table-tarj-body">
                                 <div>Malejandra Ferrer</div>
-                                <div class="table-subtext">Malejandra</div>
+                                <div class="ag-table-tarj-subtext">Malejandra</div>
                             </div>
                         </div>
                     </td>
